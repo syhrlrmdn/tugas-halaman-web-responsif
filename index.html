@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopi Nusantara — Cita Rasa Otentik Biji Kopi Lokal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-stone-950">
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[300px] sm:w-[500px] md:w-[700px] h-[300px] sm:h-[500px] md:h-[700px] bg-amber-600/15 rounded-full blur-[100px] sm:blur-[140px]"></div>
+        <div class="absolute top-1/2 -left-40 w-[250px] sm:w-[400px] h-[250px] sm:h-[400px] bg-orange-700/10 rounded-full blur-[100px]"></div>
+    </div>
+
+    <header class="bg-stone-950/90 backdrop-blur-md border-b border-stone-800/80 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            
+            <div class="flex items-center space-x-2.5">
+                <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-stone-950 shadow-md shadow-amber-500/20">
+                    <svg class="w-5 h-5 text-stone-950" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M2 21h18v-2H2v2zm13-5h2a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3h-2V3H4v13a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3zm2-8h2a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-2V8zM6 5h7v11a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V5z"/>
+                    </svg>
+                </span>
+                <span class="font-extrabold text-base sm:text-lg tracking-wider bg-gradient-to-r from-amber-200 via-amber-400 to-amber-500 bg-clip-text text-transparent">
+                    KOPI NUSANTARA
+                </span>
+            </div>
+
+            <nav id="desktop-nav" class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-300">
+                <a href="#" class="nav-link text-amber-400 font-semibold transition-colors duration-200">Beranda</a>
+                <a href="#varian" class="nav-link hover:text-amber-400 transition-colors duration-200">Varian Kopi</a>
+                <a href="#kontak" id="nav-kontak" class="nav-link hover:text-amber-400 transition-colors duration-200">Hubungi Kami</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <a href="#varian" class="bg-amber-500 hover:bg-amber-400 text-stone-950 text-xs sm:text-sm font-bold px-4 py-2 sm:px-5 sm:py-2.5 rounded-full shadow-lg shadow-amber-500/20 transition active:scale-95">
+                    Beli Online
+                </a>
+                <button id="menu-btn" type="button" class="md:hidden text-stone-300 hover:text-amber-400 p-2 rounded-lg border border-stone-800 bg-stone-900/50 focus:outline-none" aria-label="Buka Menu">
+                    <svg id="icon-hamburger" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden border-b border-stone-800 bg-stone-950/95 backdrop-blur-lg px-4 pt-2 pb-6 space-y-3">
+            <a href="#" class="mobile-link block px-3 py-2.5 rounded-lg text-amber-400 bg-stone-900/60 font-semibold text-sm">
+                Beranda
+            </a>
+            <a href="#varian" class="mobile-link block px-3 py-2.5 rounded-lg text-stone-300 hover:text-amber-400 hover:bg-stone-900/40 text-sm font-medium transition">
+                Varian Kopi
+            </a>
+            <a href="#kontak" class="mobile-link block px-3 py-2.5 rounded-lg text-stone-300 hover:text-amber-400 hover:bg-stone-900/40 text-sm font-medium transition">
+                Hubungi Kami
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 space-y-16 sm:space-y-20 flex-1 w-full">
+        
+        <section class="text-center space-y-4 sm:space-y-6 max-w-3xl mx-auto pt-4 sm:pt-8">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-stone-900/90 border border-amber-500/30 text-amber-300 text-xs font-semibold shadow-inner">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                </span>
+                <span>Fresh Roast Ready • Stok Terbatas Hari Ini</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-black text-stone-100 tracking-tight leading-[1.15]">
+                Cita Rasa Otentik <br class="hidden sm:inline">
+                <span class="bg-gradient-to-r from-amber-200 via-amber-400 to-orange-500 bg-clip-text text-transparent">
+                    Biji Kopi Asli
+                </span> 
+                Petani Nusantara
+            </h1>
+
+            <p class="text-stone-400 text-sm sm:text-base md:text-lg leading-relaxed px-2 max-w-2xl mx-auto">
+                Dipetik langsung dari lereng pegunungan terbaik Indonesia, disangrai dengan presisi tinggi untuk menghadirkan aroma kaya dan keaslian rasa kopi lokal premium langsung ke cangkir Anda.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-2 w-full sm:w-auto">
+                <a href="#varian" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold text-sm px-7 py-3.5 rounded-full shadow-xl shadow-amber-500/20 transition active:scale-95">
+                    <span>Jelajahi Varian Rasa</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </a>
+                <a href="#kontak" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-stone-700 bg-stone-900/80 hover:bg-stone-800 text-stone-200 font-semibold text-sm px-7 py-3.5 rounded-full transition active:scale-95">
+                    <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    <span>Hubungi Kami</span>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 pt-10 border-t border-stone-800/80 mt-12">
+                <div class="p-4 rounded-2xl bg-stone-900/40 border border-stone-800/60 backdrop-blur-sm">
+                    <strong class="block text-2xl sm:text-3xl font-black text-amber-400">100%</strong>
+                    <p class="text-xs sm:text-sm text-stone-400 mt-0.5">Arabika & Robusta Murni</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-stone-900/40 border border-stone-800/60 backdrop-blur-sm">
+                    <strong class="block text-2xl sm:text-3xl font-black text-amber-400">48 Jam</strong>
+                    <p class="text-xs sm:text-sm text-stone-400 mt-0.5">Maksimal Pasca Sangrai</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-stone-900/40 border border-stone-800/60 backdrop-blur-sm">
+                    <strong class="block text-2xl sm:text-3xl font-black text-amber-400">5.000+</strong>
+                    <p class="text-xs sm:text-sm text-stone-400 mt-0.5">Pelanggan UMKM Puas</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="varian" class="pt-4 space-y-8">
+            <div class="text-center space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-bold text-stone-100 tracking-tight">Koleksi Biji Kopi Unggulan</h2>
+                <p class="text-xs sm:text-sm text-stone-400 max-w-md mx-auto">Pilihan biji kopi pilihan langsung dari berbagai daerah penghasil kopi terbaik Indonesia</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Kartu 1: Gayo Aceh -->
+                <div class="bg-stone-900/60 rounded-2xl border border-stone-800/80 hover:border-amber-500/40 shadow-sm transition overflow-hidden group flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative">
+                            <img src="image/Aceh_Gayo_Arabica.jpg" alt="Biji Kopi Arabika Gayo Aceh" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-semibold text-amber-400 bg-stone-950/80 px-2.5 py-1 rounded-md border border-stone-800 uppercase tracking-wider">Single Origin</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-stone-100 mb-2">Arabika Gayo Aceh</h3>
+                            <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
+                                Aroma rempah yang kaya dengan tingkat keasaman seimbang dan sentuhan rasa cokelat hitam alami.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-stone-800/60 flex items-center justify-between text-xs">
+                        <span class="font-bold text-amber-300 text-sm">Rp 85.000 <span class="text-[10px] text-stone-500 font-normal">/ 250g</span></span>
+                        <a href="#kontak" class="btn-pesan bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-stone-300 font-medium px-3.5 py-1.5 rounded-lg transition inline-block">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- Kartu 2: Toraja Kalosi -->
+                <div class="bg-stone-900/60 rounded-2xl border border-stone-800/80 hover:border-amber-500/40 shadow-sm transition overflow-hidden group flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative">
+                            <img src="image/Toraja_Kalosi_Premium.jpg" alt="Biji Kopi Toraja Kalosi" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-semibold text-amber-400 bg-stone-950/80 px-2.5 py-1 rounded-md border border-stone-800 uppercase tracking-wider">House Blend</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-stone-100 mb-2">Toraja Kalosi Premium</h3>
+                            <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
+                                Ciri khas body tebal dengan sensasi rasa buah karamel manis dan aftertaste yang halus di tenggorokan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-stone-800/60 flex items-center justify-between text-xs">
+                        <span class="font-bold text-amber-300 text-sm">Rp 90.000 <span class="text-[10px] text-stone-500 font-normal">/ 250g</span></span>
+                        <a href="#kontak" class="btn-pesan bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-stone-300 font-medium px-3.5 py-1.5 rounded-lg transition inline-block">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- Kartu 3: Robusta Temanggung -->
+                <div class="bg-stone-900/60 rounded-2xl border border-stone-800/80 hover:border-amber-500/40 shadow-sm transition overflow-hidden group sm:col-span-2 lg:col-span-1 flex flex-col justify-between">
+                    <div>
+                        <div class="h-48 w-full overflow-hidden relative">
+                            <img src="image/Rebusta_Temanggung.jpg" alt="Biji Kopi Robusta Temanggung" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+                            <span class="absolute bottom-3 left-4 text-xs font-semibold text-amber-400 bg-stone-950/80 px-2.5 py-1 rounded-md border border-stone-800 uppercase tracking-wider">Dark Roast</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg text-stone-100 mb-2">Robusta Temanggung</h3>
+                            <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">
+                                Memiliki rasa pahit yang mantap, aroma moka yang gurih, serta kadar kafein tinggi cocok untuk es kopi susu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-stone-800/60 flex items-center justify-between text-xs">
+                        <span class="font-bold text-amber-300 text-sm">Rp 65.000 <span class="text-[10px] text-stone-500 font-normal">/ 250g</span></span>
+                        <a href="#kontak" class="btn-pesan bg-stone-800 hover:bg-amber-500 hover:text-stone-950 text-stone-300 font-medium px-3.5 py-1.5 rounded-lg transition inline-block">Pesan</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="kontak" class="pt-8 border-t border-stone-800/80">
+            <div class="bg-stone-900/40 border border-stone-800/80 rounded-3xl p-6 sm:p-10 text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-stone-100">Ada Pertanyaan atau Pesanan Khusus?</h2>
+                <p class="text-stone-400 text-sm sm:text-base leading-relaxed">
+                    Kami melayani pembelian eceran maupun partai besar untuk kebutuhan coffee shop dan kantor Anda.
+                </p>
+                <div class="pt-2">
+                    <a href="https://wa.me/" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm px-6 py-3 rounded-full transition shadow-lg shadow-emerald-600/20">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                        <span>Hubungi via WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-950 border-t border-stone-900 py-6 sm:py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500 text-center sm:text-left">
+            <p>&copy; 2026 Pemrograman Web Dasar — Latihan Hero Section UMKM.</p>
+            <p class="font-medium text-stone-400">Kopi Nusantara — Pemberdayaan Petani Lokal</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconHamburger = document.getElementById('icon-hamburger');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            iconHamburger.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+
+        const desktopLinks = document.querySelectorAll('.nav-link');
+
+        function activateNavLink(targetLink) {
+            desktopLinks.forEach(item => {
+                item.classList.remove('text-amber-400', 'font-semibold');
+            });
+            targetLink.classList.add('text-amber-400', 'font-semibold');
+        }
+
+        desktopLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                activateNavLink(this);
+            });
+        });
+
+        const btnPesanList = document.querySelectorAll('.btn-pesan');
+        const navKontak = document.getElementById('nav-kontak');
+
+        btnPesanList.forEach(btn => {
+            btn.addEventListener('click', function() {
+                activateNavLink(navKontak);
+            });
+        });
+    </script>
+
+</body>
+</html>
